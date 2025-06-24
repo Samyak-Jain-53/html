@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-indent:0%;
+}
+.block {
+    background-color: rgba(73, 34, 114, 0.749);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    background-color: aqua;
+    font-family:cursive;
+    color:chocolate;
+    font-weight: 1;
+}
+a:visited {
+    color: rgb(123, 114, 114);
+    background-color: transparent;
+}
+a:link {     
+    color: rgb(148, 12, 245);
+    background-color: transparent;
+}
+a:hover {
+    color: blue;
+    background-color: transparent;
+}
+a:active {
+    color: rgb(102, 102, 79);
+    background-color: transparent;
+}
+.trial{
+    height:500px;
+    border:2px solid gray;
+    background-color: coral;
+    width: 200px;
+}
+.spanin{
+    border-bottom:100% aqua;
+    color:blueviolet;
+    background-color: rgb(102, 102, 79);
+}
+h5[class] {
+    font-size: 30px;
+    font-family:cursive;
+    
+
+}
+h5[class="a"] {
+    font-size: 50px;
+    font-family:cursive;
+    
+
+}

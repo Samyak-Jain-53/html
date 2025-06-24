@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        .fieldset{
+            border:1px solid rgb(83, 81, 81);
+        }
+        .container{
+            background-color: rgb(228, 220, 226);
+            width:fit-content;
+            margin:auto;
+            display:flex;
+        }
+    
+        .name{
+            height: fit-content;
+            width:fit-content;
+        }
+        .fn{
+            margin:5px;
+            float:left;
+        }
+        .fn label input:valid{
+            background-color: rgb(157, 191, 107);
+
+        }
+        .ln input:valid{
+            background-color: rgb(157, 191, 107);
+
+        }
+        .ln{
+            margin:5px;
+            float:left;
+        }
+        .information{
+            height: max-content;
+            width:max-content;
+            margin:5px;
+            margin-left: 0px;
+        }
+        .mail{
+            margin:5px;
+            float:left;
+        }
+
+        .address{
+            margin:5px;
+        }
+        .address textarea{
+            height:16px;
+            width:200px;
+        }
+        .city{
+            margin:5px;
+        }
+        .state{
+            margin:5px;
+             float:left;
+       }
+        .pincode{
+            margin:5px;
+            float:left;
+        }
+        .security{
+            height: fit-content;
+            width:fit-content;
+        }
+        .pass{
+            margin:5px;
+            float:left;
+        }
+        .pin{
+            margin:5px;
+            float:left;
+        }
+        .button{
+            margin:10px;
+       }
+        .button input{
+            margin:10px;
+            box-shadow: 2px 2px 9px rgb(77, 77, 123);
+            background-color: rgb(85, 115, 142);
+        }       
+        .button input[type="submit"]:hover{
+            color: aliceblue;
+            background-color: rgb(2, 2, 2);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form  autocomplete="on" method="post">
+            <fieldset>
+                <div class="form">
+                    <div class="name">
+                        <fieldset class="fieldset"><legend>Name</legend>
+                            <div class="fn"><label for="fname" ><input id="fname" type="text" placeholder="First Name" autofocus required> </label></div>
+                            <div class="ln"><label for="lname" ><input id="lname" type="text" placeholder="Last Name" required ></label></div>
+                        </fieldset> 
+                    </div>
+                    <div class="information">
+                        <fieldset class="fieldset"><legend>Other Information</legend>
+                            <div class="mail"><label for="mail" ><input id="mail" type="mail" placeholder="E-mail"required></label></div>
+                            <div class="address"><label for="add" ><textarea placeholder="Address"></textarea></label></div>
+                            <div class="city"><label for="city" ><input type="text" placeholder="City"></label></div>
+                            <div class="state">
+                                <select required >
+                                    <option>Haryana</option>
+                                    <option>Delhi</option>
+                                    <option>Other</option>
+                                </select>
+                             </div>
+                            <div class="pincode"><label for="pinc"><input id="pinc" type="text" placeholder="Pin Code" maxlength="6"> </label></div>
+
+
+
+                        </fieldset>
+                    </div>
+                    <div class="security">
+                        <fieldset class="fieldset"><legend>Security</legend>
+                            <div class="pass"><label for="Password" ><input id="Password" type="password" placeholder="Password"> </label></div>
+                            <div class="pin"><label for="pin"><input id="pin" type="password" placeholder="6-Digits Security Pin" maxlength="6"> </label></div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="button">
+                    <input id="submit" type="submit">
+                    <input id="reset" type="reset">
+                </div>
+
+
+            </fieldset>
+        </form>
+        
+
+    </div>
+    
+</body>
+</html>

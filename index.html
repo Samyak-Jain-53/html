@@ -1,0 +1,252 @@
+
+
+<!--types of tags{
+    paired - start and end 
+    unpaired - only start
+}-->
+
+
+
+
+
+<!DOCTYPE html><!--representing html 5 version--> 
+<html lang="en"> <!--basic html tag-->
+
+    <head><!--all the content used by html website and non dispalyed-->
+        
+        
+        <link rel="stylesheet" href="style.css"/>
+        
+        
+        <title>Samyak</title>
+
+
+
+        <script src="script.js"></script>       
+        
+        
+        <meta charset="UTF-8"/><!--for universal characteror character encoding-->
+        <meta name="Owner" content ="samyak jain"/>
+        <!--meta data conatains information that is used by browsers like google to extract page information --> 
+        <meta name="description" content="studing about full stack development"/>
+        <meta name="keywords" content="HTML,CSS,JAVASCRIPT,FULL STACK,FRONT END,BACK END"/>      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--provides information and responsive design for every device-->
+        <meta http-equiv="refresh" content="900"/><!--auto refresh page after 900 sec -->
+        <meta http-equiv="refresh" content="900000000000;url=https://www.geeksforgeeks.org/batch/js-yt/track/fullstack-bootcamp-html-additional-tags/article/NzI4Ng%3D%3D"/><!--redirected to any webpage after 9 sec-->
+    </head>
+    <body><!--all content to be displayed-->
+        <br>
+
+        <a href="#headings" title="headings,bold,italic,underline,inline_style,subscript,superscript">topic 1</a><br>
+        <a href="#paragraph" title="class,pre,paragraph,cite,big,small,abbrevation,strike,highlight,tt,kbd,hr,address">topic 2</a><br>
+        <a href="#css color" title="CSS color styles">topic 3</a><br>
+        <a href="#link" title="image, link, target">topic 4</a><br>
+        <a href="#table" title="table">topic 5</a><br>
+        <a href="#divandspan" title="div and span">topic 6</a><br>
+        <a href="#list" title="lists">topic 7</a><br>
+        <a href="#iframe" title="iframe and its application">topic 8</a><br>
+        <a href="#forms" title="forms">topic 9</a><br>
+        
+        
+        <h1 id="headings">this is an element</h1>
+        <b><h2>heading 2</h2></b>
+        <i><h3>heading 3</h3></i>
+        <u><h4>heading 4</h4></u>
+        <!--Inline style-->
+        <h5 align="center" style="color:brown;background-color:bisque;">heading 5</h5>
+        <h6>this is <sub>heading</sub><sup>6</sup></h6>
+        
+        
+        
+        <pre align="center" ><!--pre tag makes text displayed as it is without ignoring spaces-->
+            <p id="paragraph" class="block"><!--class gives a division or span a special name so that we can style it -->
+                <cite>Life of Samyak Jain</cite><!--some important heading in the middle pf paragraph-->
+                This is a <big>paragraph</big> <small>about</small>
+                <abbr title="Ashu">Samyak Jain</abbr>.He
+                is very <strike>lazy </strike><mark>talented</mark> boy who wants t
+                o <tt>make his reputation in</tt> <kbd>society</kbd>.<hr/><!--creates a horizontal rule or line-->
+                <br/><!--creates new line-->His father name is Mr. Jawahar Lal Jain.He is a businessman who runs his family's traditional shop of clothes and garments.
+            </p>
+        </pre>
+        <p>He studies at a very famous University, <abbr title="Delhi Technological University">DTU</abbr> of <address>Rohini sector 17, Shahbad Extension,Delhi</address></p>
+
+
+
+
+        <h5 id="css color" align="center" style="color:brown;background-color:bisque;">heading 1</h5><!--name of teh color-->
+        <h5 class="a" align="center" style="color:#7b4343;background-color:#11cc2d;">heading 2</h5><!--hexadecimal code -->
+        <h5 class="b" align="center" style="color:rgb(30,50,86);background-color:rgb(84,56,27)">heading 3</h5><!--using rgb()-->
+        <h5 class="c" align="center" style="color:rgba(52,48,94,0.8);background-color:rgba(56,58,54,0.2);">heading 4</h5><!--using rgba(), a for transparency[0,1]-->
+        <h5 align="center" style="color:hsl(0,18%,19%);background-color:hsl(40, 47%, 50%);">heading 5</h5><!--hsl(hue,saturation,loghtness)-->
+        <h5 align="center" style="color:hsla(8,8%,5%,0.2);background-color:hsla(from #11cc2d 8 80 50);">heading 6</h5><!--hsl(hue,saturation,loghtness,transparency)-->
+
+
+        <h1 id="link"></h1>
+        <a  href="https://www.geeksforgeeks.org"  target="_blank" title="do not open if you re under 18" ><img src="image.jpg" height="500px" width="182.56px" alt="opens in new window"  ></a><br>
+        <a href="https://www.wow.com"  target="_parent" title="do not open if you re under 18" ><img src="imae.jpg" height="500px" width="182.56px"alt="opens in parent frame" ></a><br>
+        <a href="https://www.wow.com"  target="_top" title="do not open if you re under 18" ><img src="imag.jpg" height="500px" width="182.56px"alt="opens at top of curr tab" ></a><br>
+        <a href="https://www.wow.com"  target="_self" title="do not open if you re under 18" ><img src="imae.jpg" height="500px" width="182.56px"alt="opens on the same tab" ></a><br>
+        
+
+        <table  border="1" cellspacing="5" cellpadding="5" height="500px" width=auto style="color:aqua;background-color:white;border-color: #000000;border-width: 0cap;border-collapse:separate;" id="table"><!--attributes for he entire table-->
+            <caption style="color:black;background-color: aquamarine;font-size: 200%" >Table Caption</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" rowspan ="2">Table Header</th><!--colspan,rowspan used to merge specified rows and coloumns-->
+                </tr>
+                <tr><td></td></tr>
+            </thead>
+            <tbody>
+                <tr height="400px"><!--height for this row-->
+                    <th width="auto">Name</th><!--th used for table heading, width for this coloumn-->
+                    <th>Roll No.</th>
+                    <th>Gender</th>
+                    <th>Phone No.</th>
+                    <th><abbr title="How much you are Rapable">Rating</abbr></th>
+                </tr>
+                <tr>
+                    <td width="auto">Shubham Ojha</td>
+                    <td>1</td>
+                    <td>Male</td>
+                    <td>XXXXX XXXXX</td>
+                    <td><abbr title="How much you are Rapable">9.2</abbr></td>
+                </tr>
+                <tr>
+                    <td width="auto">Shitz Kumar Mitra</td>
+                    <td>2</td>
+                    <td>Male</td>
+                    <td>XXXXX XXXXX</td>
+                    <td><abbr title="How much you are Rapable">9.9</abbr></td>
+                </tr>
+                <tr>
+                    <td width="auto">Siddhant Chaudhary</td>
+                    <td>3</td>
+                    <td>Male</td>
+                    <td>XXXXX XXXXX</td>
+                    <td><abbr title="How much you are Rapable">8.4</abbr></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" >Table Footer</th><!--colspan,rowspan used to merge specified rows and coloumns-->
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+        <div class="trial" id = "divandspan"><!--class gives a division or span a special name so that we can style it -->
+            <p align="center" >hello <span class="spanin">world</span></p>
+
+        </div>
+
+        <ol id="list" reversed type="A" start="5" ><!--prints list's order in reverse-->
+            <li >Apple</li>
+            <li>Samsung</li>
+            <li>Xiaomi</li>
+        </ol>
+
+        <ul style="list-style-type:circle">
+            <li >Apple</li>
+            <li>Samsung</li>
+            <li>Xiaomi</li>
+                <ol type="I">
+                    <li value="3">MI</li>
+                    <li>POCO</li>
+                </ol>
+        </ul>
+
+        <dl>
+            <dt>Ashu</dt>
+            <dd>Real Name: Samyak Jain</dd>
+        </dl>
+
+
+        <!--freeformatter.com : website where we can find codes for the reserved characters to print,
+         reserved character like alpha, greek, emojis etc.-->
+        
+
+        <h2 id="iframe">Embedded Google Maps</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d871.541648318286!2d75.96213006957097!3d29.100762698463274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912391a3a5aa213%3A0xbd8ddacacf9461c7!2sMohalla%20Phika%20Peer%2C%20Hansi%2C%20Haryana%20125033!5e0!3m2!1sen!2sin!4v1749896777925!5m2!1sen!2sin"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>Embedded You Tube Video</h2>
+     <iframe width="600" height="450" src="https://www.youtube-nocookie.com/embed/videoseries?si=RDP8txCI9HHYX6KB&amp;list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     <h2>Iframe With Hyperlink</h2>
+     <a href="https://www.w3schools.com/charsets/ref_html_entities_a.asp" target="page1" title="HTML Entities, Emojis, Character Sets">Search Character sets</a>
+     <iframe src="" name="page1" style="border:none" frameborder="0" scrollling="yes"></iframe>
+
+
+
+
+
+     <form id="forms" action="semantic.html" name="forum" method="post" autocomplete="on"><!--method-post(doesnt show thw value on the webserver)/get(default method that shows data on web server)-->
+        <fieldset style="border:2px solid rgb(142, 19, 19);width:90px"><!--fieldset creates a border around the form-->
+            <legend>general form</legend><!--gives heading to the form-->
+            <label for="username">Usermname:</label> <input type="text" id="username" name = "user" readonly ><br><br><!--readonly, disabled, autofocus, required-->
+            <label for="Pass">Password:</label><input type="password" id="Pass" name = "security"  required><br><br>
+            <label for="find">Search:</label><input id="find" type="search" placeholder="SEARCH...." disabled><br><br>
+            Time:<input type="time" name = "At"><br><br>
+            Telephone:<input type="tel" name = "phone" value="+91" maxlength="13" ><br><br>
+            Website:<input type="url" name = "web"><br><br>
+            Week:<input type="week" name = "CurrWeek"><br><br>
+            Color:<input type="color" name = "Color"><br><br>
+            Date:<input type="date" name = "DOB" min=""><br><br>
+            E-mail:<input type="email" name = "mail"><br><br>
+            File:<input type="file" name = "file" multiple><br><br>
+            Range:<input type="range" name = "age" ><br><br>
+            Image:<input type="image" src="image.jpg" height="200px" width="150px" name = "image"><br><br>
+            Month:<input type="month" name = "CurrMonth"><br><br>
+            Number:<input type="number" name = "SrNo." min="18" max="30" step="2"><br><br>
+            
+            Male: <input type="radio" name="Gender" value="male" id="male"><br/><br/>
+            Female: <input type="radio" name="Gender" value="female" id="female"><br/><br/>
+            DSA:<input type="checkbox" name="std" value="DSA_Done" id="dsa"><!--Value-to set initial value, Name- to give a name to input field(used in javascript), id- to give a unique name,  step , height, width, size, maxlength, min&max, multiple, placeholder -->
+            HTML:<input type="checkbox" name="std" value="HTML_Done" id="html"><br/><br/>
+            CSS:<input type="checkbox" name="std" value="CSS_Done" id="css"><br/><br/>
+            JAVASCRIPT:<input type="checkbox" name="std" value="JAVASCRIPT_Done" id="java"><br/><br/>
+            AI & ML:<input type="checkbox" name="std" value="AI&ML_Done" id="aiml"><br/><br/>
+            DATA SCIENCE:<input type="checkbox" name="std" value="DS_Done" id="ds"><br/><br/>
+            <label for="selection">Quota: </label><select id="selection" required placeholder="Select your Quota" >
+                <option>General</option>
+                <option>EWS</option>
+                <option>SC</option>
+                <option>ST</option>
+                <option>PWD</option>
+            </select><br/><br/>
+            <textarea height="300px" width="300px"></textarea><br/><br/>
+            <input type="button" value="okay">
+            <input type="submit">
+            <input type="reset" ><br><br>
+        </fieldset>
+     </form>
+     <audio src="audio.opus" controls autoplay></audio>
+
+
+
+
+    </body>
+</html>
+
+<!--CSS Notes
+presence selector : [attribute="value"]-Directly apply to attribute who has equal value
+attribute value selector : [attribute~="value"]-Directly apply to attribute who has equal value seperated by spacebar
+sub string matching : [attribute|="value"]-Directly apply to attribute who has equal value seperated by "-" and should be at starting point
+wildcard selector : [attribute^="value"]-Directly apply to attribute who has equal value that should be seperated 
+[attribute$="value"]-Directly apply to attribute who has equal value that should not be seperated
+[attribute*="value"]-Directly apply to attribute who has equal value no matter where and how it is
+
+
+
+h1 h2{it is descendent selector
+}
+h1>h2{it is children selector 
+}
+h1+h2{adjacent sibling selector applied to h2 that is immidiately after h1
+}
+h1~h2{general sibling selector applied to h2 that are after h1
+}
+-->
